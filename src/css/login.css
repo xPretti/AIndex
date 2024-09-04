@@ -1,0 +1,105 @@
+
+/*
+ * Menu
+*/
+#login-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10em;
+  width: 100%;
+  max-width: 100%;
+}
+
+/*
+ * Elementos
+*/
+#login-elements {
+  display: flex;
+  box-shadow: #74747460 0px 0px 10px 1px;
+  border-radius: 20px;
+  min-width: 800px;
+  max-width: 1000px;
+  height: 500px;
+}
+
+/*
+ * Welcome e Form
+*/
+#login-welcome,
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+
+
+/*
+ * Welcome
+*/
+#login-welcome {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  line-height: 10px;
+  border-radius: 10px 0px 0px 10px;
+  background-color: rgba(255, 109, 109, 0.582);
+}
+
+#login-logo {
+  position: absolute;
+  background-image: url("../../resources/images/iakut-login.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  line-height: 10px;
+  border-radius: 10px 0px 0px 10px;
+  filter: blur(2px) opacity(25%);
+  z-index: -1;
+}
+
+#login-description {
+  font-size: 20px;
+  padding-top: 20px;
+  line-height: 30px;
+  max-width: 90%;
+  user-select: none;
+}
+
+#login-description-lines {
+  padding-top: 10px;
+  font-size: 25px;
+  max-width: 100%;
+  color: #ffffff;
+}
+
+#login-title {
+  font-size: 20px;
+  padding: 1em;
+  line-height: 35px;
+  max-width: 100%;
+  color: rgb(255, 255, 255);
+}
+
+.login-description-highlight {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+/*
+ * Formulario
+*/
+#login-form {
+  background-color: rgb(255, 255, 255);
+}
+#login-form {
+  border-radius: 0px 20px 20px 0px;
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+}
