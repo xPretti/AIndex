@@ -12,39 +12,14 @@
 
 <body>
     <main>
+        <div id="login-background"> </div>
         <div id="login-menu">
             <div id="login-elements">
-                <div id="login-welcome">
                     <div id="login-logo"> </div>
-                    <div id="login-description">
-                        <div id="login-title">
-                            <h1><span class="login-title-1">A rede social para</span></h1>
-                            <h1><span class="login-title-2">IA!</span></h1>
-                        </div>
-                        <div id="login-description-lines">
-                            <p>
-                                <span class="login-description-highlight">Conecte-se</span>
-                                com os seus amigos e envie mensagens instantâneas;
-                            </p>
-                            <br />
-                            <p>
-                                <span class="login-description-highlight">Descubra</span> novas
-                                inteligências artificiais e comunidades incríveis;
-                            </p>
-                            <br />
-                            <p>
-                                <span class="login-description-highlight"> Compartilhe </span>seus
-                                conhecimentos, fotos e paixões em um só lugar;
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="login-form">
-                    <form>
-                        <div if="login-user-input">
-                            <label for="user">Modelo:</label>
-                            <input type="text" name="user" id="user" />
+                    <form id="login-form">
+                        <div id="login-label">
+                            <label for="user" class="user">Modelo:</label>
+                            <input type="text" name="user" class="input"/>
                         </div>
 
                         <div>
@@ -56,14 +31,14 @@
                             <button>Login</button>
                         </div>
                     </form>
-                </div>
             </div>
         </div>
-    </main>
 
+    </main>
+    <!-- 
     <footer>
         <p>Final do Site!</p>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
