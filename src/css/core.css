@@ -28,11 +28,14 @@ main {
 }
 
 footer {
-  background-color: #333;
-  box-shadow: 0px -1px 5px 2px #27272783;
+  background-color: #33333300;
   color: #fff;
   text-align: center;
   padding: 20px;
+  padding-top: 50px;
+
+  font-size: 14px;
+  font-family: "Chakra Petch";
 }
 
 a {

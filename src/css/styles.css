@@ -50,10 +50,18 @@
   padding: 0;
   width: 100%;
   height: 60%;
-  background: url("../../resources/images/iakut-login.jpeg");
+  background: url("../../resources/images/Background.jpeg");
   background-size: cover;
   filter: blur(8px) opacity(3%) grayscale(100%);
   background-attachment: fixed;
+  z-index: -1;
+  animation: background-animation 1200s infinite linear;
+}
+
+@keyframes background-animation {
+  to{
+    background-position: center top 4500vh;
+  }
 }
 
 .search-container {
@@ -131,7 +139,7 @@
   height: 30px;
   width: 185px;
 
-  background-color: #52525248;
+  background-color: transparent;
   border: 1px solid transparent;
   cursor: pointer;
 
@@ -145,6 +153,18 @@
   text-decoration: none;
   border-radius: 0;
   z-index: 1;
+}
+.category-button:active,
+.category-button:active:hover {
+  background-color: transparent;
+
+  color: rgb(102, 255, 0);
+}
+.category-button:hover {
+  background: transparent;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: rgb(255, 230, 0);
 }
 
 .search-input {
@@ -164,13 +184,17 @@
   text-decoration: none;
   border-radius: 0;
 }
-
-.search-input:active {
-  background: transparent;
-  background-color: transparent;
-  border: 1px solid transparent;
+.search-input:focus {
+  border-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
-.search-input: {
+.search-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.search-input:active {
   background: transparent;
   background-color: transparent;
   border: 1px solid transparent;
@@ -254,4 +278,15 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 30px;
+  background-image: linear-gradient(
+    0deg,
+    transparent 0%,
+    rgb(59, 59, 59) 50%,
+    transparent 100%
+  );
 }
