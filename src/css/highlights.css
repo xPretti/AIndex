@@ -1,0 +1,13 @@
+.style-rgb {
+  background: -webkit-linear-gradient(
+    35deg,
+    #1a73e8 0%,
+    #ff0099 20%,
+    #ff6600 40%,
+    #ffcc00 60%,
+    #33cc33 80%,
+    #1a73e8 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
