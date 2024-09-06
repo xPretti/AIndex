@@ -49,7 +49,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: 60%;
   background: url("../../resources/images/iakut-login.jpeg");
   background-size: cover;
   filter: blur(8px) opacity(3%) grayscale(100%);
@@ -57,7 +57,7 @@
 }
 
 .search-container {
-  height: 100vh;
+  height: 55vh;
 }
 
 .search-content {
@@ -107,4 +107,151 @@
   font-family: "Chakra Petch", sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+
+/*
+ * Categoria de tipos
+*/
+.categories {
+  width: 100%;
+}
+.category-types {
+  position: relative;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  gap: 10px;
+}
+
+.category-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 185px;
+
+  background-color: #52525248;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  color: #ffffff;
+  font-family: "Chakra Petch";
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+
+  padding: 5px 19px;
+  text-decoration: none;
+  border-radius: 0;
+  z-index: 1;
+}
+
+.search-input {
+  width: 80%;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  color: #ffffff;
+  font-family: "Chakra Petch";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+
+  padding: 5px 19px;
+  text-decoration: none;
+  border-radius: 0;
+}
+
+.search-input:active {
+  background: transparent;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.search-input: {
+  background: transparent;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+/*
+ * Resultados
+*/
+.results-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.results-container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  background-color: rgb(0, 0, 0);
+
+  border-width: 2px 2px 2px 2px;
+  border-image: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(70, 69, 69) 100%);
+  border-image-slice: 9;
+  border-style: solid;
+}
+
+.search-form {
+  position: absolute;
+  width: 100%;
+  min-width: 1300px;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+@media (max-width: 1215px) {
+  .search-form {
+    display: none;
+  }
+}
+@media (min-width: 1215px) {
+  .search-form {
+    display: flex;
+  }
+}
+
+.search-group {
+  display: flex;
+  justify-content: space-around;
+  height: 25px;
+  width: 165px;
+
+  background-color: #52525200;
+  border: 1px solid #52525248;
+  cursor: pointer;
+}
+
+.search-group:hover {
+  border: #ffb08b93 solid 1px;
+}
+
+.search-group:active {
+  top: 1px;
+  background: transparent;
+}
+
+.input-search-btn {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.align-insile-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }

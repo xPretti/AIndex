@@ -11,3 +11,10 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.style-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
