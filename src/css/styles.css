@@ -59,7 +59,7 @@
 }
 
 @keyframes background-animation {
-  to{
+  to {
     background-position: center top 4500vh;
   }
 }
@@ -73,7 +73,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
 }
 .search-title {
@@ -83,6 +83,7 @@
   font-style: normal;
   font-size: 40px;
   padding-top: 60px;
+  white-space: nowrap;
 }
 .search-description {
   color: #f4f4f4;
@@ -214,9 +215,11 @@
   padding-bottom: 20px;
 }
 .results-container {
+  display: flex;
+  padding: 10px;
+
   width: 90%;
   height: 100%;
-  display: flex;
   background-color: rgb(0, 0, 0);
 
   border-width: 2px 2px 2px 2px;
@@ -289,4 +292,152 @@
     rgb(59, 59, 59) 50%,
     transparent 100%
   );
+}
+
+/*
+ * Cartão
+*/
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: linear-gradient(
+    345deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  border-radius: 16px;
+  box-shadow: inset 0 1px 1px #ffffff1a;
+  overflow: hidden;
+  position: relative;
+
+  width: 320px;
+
+  gap: 10px;
+
+  color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.9);
+}
+
+.card-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  filter: brightness(0.85);
+  transition: filter 0.3s ease;
+}
+
+.card:hover .card-image img {
+  filter: brightness(1);
+}
+
+.card-content {
+  padding: 20px;
+  background-color: rgba(250, 12, 12, 0);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.37);
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  width: 90%;
+  height: 60%;
+}
+
+.card-content::-webkit-scrollbar {
+  width: 3px;
+}
+
+.card-content::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 15px;
+}
+
+.card-content::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.card-content::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.card-content h3 {
+  font-size: 30px;
+  color: #00d4ff;
+  font-family: "Orbitron", sans-serif;
+}
+
+.card-content h4 {
+  font-size: 14px;
+  color: #fff490b9;
+  font-family: "Orbitron", sans-serif;
+}
+
+.card-content {
+  color: #909090;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 13px;
+  
+}
+
+.card-content  p{
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 13px;
+
+  color: #909090;
+
+  margin-top: 30px;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 20%;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 10%;
+}
+
+.card-more-btn {
+  width: 50%;
+  height: 80%;
+
+  background-color: rgba(0, 255, 106, 0.63);
+  box-shadow: 0px 0px 2px rgba(43, 255, 0, 0.37);
+  overflow: hidden;
+
+  border: transparent solid 1px;
+
+  font-size: 22px;
+  color: rgb(13, 51, 28);
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.card-more-btn:hover {
+  background-color: white;
+  transition: all 1s ease-out;
+}
+
+.card-more-btn:active {
+  background-color: rgba(0, 255, 106, 0.63);
+  transition: all 1ms ease-out;
 }
