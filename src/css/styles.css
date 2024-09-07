@@ -52,7 +52,7 @@
   height: 60%;
   background: url("../../resources/images/Background.jpeg");
   background-size: cover;
-  filter: blur(8px) opacity(3%) grayscale(100%);
+  filter: blur(8px) opacity(4%) grayscale(100%);
   background-attachment: fixed;
   z-index: -1;
   animation: background-animation 1200s infinite linear;
