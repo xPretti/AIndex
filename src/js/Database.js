@@ -1,0 +1,50 @@
+let aiDatabase = [
+  {
+    category: ENUM_CATEGORY_TYPE.ALL | ENUM_CATEGORY_TYPE.ASSISTANT,
+    categoryName: "Assistente",
+    name: "Gemini",
+    info: "Gemini foi criada pelo Google e treinada com uma enorme quantidade de informação, Gemini é capaz de gerar textos, traduzir idiomas, escrever diferentes tipos de conteúdo criativo e responder suas perguntas de forma informativa.",
+    img: "../../resources/images/AIs/Gemini.png",
+    link: "https://gemini.google.com/",
+  },
+  {
+    category: ENUM_CATEGORY_TYPE.ALL | ENUM_CATEGORY_TYPE.COPILOT,
+    categoryName: "Assistente",
+    name: "AA",
+    info: "Gemini foi criada pelo Google, foi treinada com uma enorme quantidade de informação, ela é capaz de gerar textos, traduzir idiomas, escrever diferentes tipos de conteúdo criativo e responder suas perguntas de forma informativa.",
+    img: "../../resources/images/AIs/Gemini.png",
+    link: "https://gemini.google.com/",
+  },
+  {
+    category: ENUM_CATEGORY_TYPE.ALL | ENUM_CATEGORY_TYPE.ASSISTANT,
+    categoryName: "Assistente",
+    name: "AA",
+    info: "Gemini foi criada pelo Google, foi treinada com uma enorme quantidade de informação, ela é capaz de gerar textos, traduzir idiomas, escrever diferentes tipos de conteúdo criativo e responder suas perguntas de forma informativa.",
+    img: "../../resources/images/AIs/Gemini.png",
+    link: "https://gemini.google.com/",
+  },
+  {
+    category: ENUM_CATEGORY_TYPE.ALL | ENUM_CATEGORY_TYPE.ASSISTANT,
+    categoryName: "Assistente",
+    name: "AA",
+    info: "Gemini foi criada pelo Google, foi treinada com uma enorme quantidade de informação, ela é capaz de gerar textos, traduzir idiomas, escrever diferentes tipos de conteúdo criativo e responder suas perguntas de forma informativa.",
+    img: "../../resources/images/AIs/Gemini.png",
+    link: "https://gemini.google.com/",
+  },
+  {
+    category: ENUM_CATEGORY_TYPE.ALL | ENUM_CATEGORY_TYPE.ASSISTANT,
+    categoryName: "Assistente",
+    name: "AA",
+    info: "Gemini foi criada pelo Google, foi treinada com uma enorme quantidade de informação, ela é capaz de gerar textos, traduzir idiomas, escrever diferentes tipos de conteúdo criativo e responder suas perguntas de forma informativa.",
+    img: "../../resources/images/AIs/Gemini.png",
+    link: "https://gemini.google.com/",
+  },
+  {
+    category: ENUM_CATEGORY_TYPE.ALL | ENUM_CATEGORY_TYPE.ASSISTANT,
+    categoryName: "Assistente",
+    name: "AA",
+    info: "Gemini foi criada pelo Google, foi treinada com uma enorme quantidade de informação, ela é capaz de gerar textos, traduzir idiomas, escrever diferentes tipos de conteúdo criativo e responder suas perguntas de forma informativa.",
+    img: "../../resources/images/AIs/Gemini.png",
+    link: "https://gemini.google.com/",
+  }
+];

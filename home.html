@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -20,7 +20,7 @@
     <header>
         <div class="header-container">
             <div class="header-container-left">
-                <a href="#">
+                <a href="">
                     <img class="logo" src="../../resources/images/Logo.png">
                 </a>
             </div>
@@ -29,7 +29,7 @@
                 <nav class="header-main">
                     <ul class="header-main-list">
                         <li>
-                            <a class="redirect-button" href="about.html">Explorar</a>
+                            <a class="redirect-button" href="">AIndex</a>
                         </li>
                     </ul>
                 </nav>
@@ -58,15 +58,15 @@
         <div class="categories align-insile-center style-no-select">
             <div class="category-types">
                 <div class="align-insile-center">
-                    <button class="category-button">Todos</button>
+                    <button class="category-button" id="btn-all" onclick='onClickCategory(this, ENUM_CATEGORY_TYPE.ALL)'>Todos</button>
                     <div class="vertical-line"></div>
-                    <button class="category-button">Assistentes</button>
+                    <button class="category-button" id="btn-assistants" onclick='onClickCategory(this, ENUM_CATEGORY_TYPE.ASSISTANT)'>Assistentes</button>
                     <div class="vertical-line"></div>
-                    <button class="category-button">Copilotos</button>
+                    <button class="category-button" id="btn-copilots" onclick='onClickCategory(this, ENUM_CATEGORY_TYPE.COPILOT)'>Copilotos</button>
                     <div class="vertical-line"></div>
-                    <button class="category-button">Artistas</button>
+                    <button class="category-button" id="btn-artists" onclick='onClickCategory(this, ENUM_CATEGORY_TYPE.ARTIST) '>Artistas</button>
                     <div class="vertical-line"></div>
-                    <button class="category-button">Sintetizadores</button>
+                    <button class="category-button" id="btn-synthesizers" onclick='onClickCategory(this, ENUM_CATEGORY_TYPE.SYNTHESIZER) '>Sintetizadores</button>
                     <form class="search-form">
                         <div class="search-group">
                             <input class="search-input" type="search" placeholder="Pesquisar">
@@ -78,29 +78,8 @@
                 </div>
             </div>
         </div>
-        <div class="results-area">
+        <div class="results-area" id="results-area">
             <div class="results-container" id="results">
-
-                <div class="card">
-                    <div class="card-image">
-                        <img src="../../resources/images/Logo.png" alt="Nome da Tecnologia">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-title">
-                            <h3>Gemini</h3>
-                            <h4>Assistante</h4>
-                        </div>
-                        <p>Informativo: Respondo suas perguntas com base em informações reais.
-                            Criativo: Posso gerar textos diferentes, como poemas ou códigos.
-                            Versátil: Converso sobre diversos assuntos, de ciência a ficção.
-                            Neutro: Não tenho opiniões pessoais, apenas apresento fatos.
-                            Aprendiz: Sempre estou aprendendo e melhorando minhas respostas.</p>
-                    </div>
-                    <div class="card-footer">
-                        <button class="card-more-btn">Conhecer</button>
-                    </div>
-                </div>
-
             </div>
         </div>
     </main>
@@ -111,6 +90,11 @@
     <footer>
         <p>&copy; 2024 AIndex. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="src/js/enuns/CategoryEnums.js"></script>
+    <script src="src/js/Database.js"></script>
+    <script src="src/js/syntaxes/Cards.js"></script>
+    <script src="src/js/App.js"></script>
 </body>
 
 </html>

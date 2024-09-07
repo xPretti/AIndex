@@ -155,6 +155,7 @@
   border-radius: 0;
   z-index: 1;
 }
+.category-button.active,
 .category-button:active,
 .category-button:active:hover {
   background-color: transparent;
@@ -210,22 +211,33 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 500px;
+
+  height: auto;
+
   padding-top: 20px;
   padding-bottom: 20px;
 }
 .results-container {
-  display: flex;
+  display: grid;
+  grid-auto-rows: 510px;
+  grid-template-columns: repeat(auto-fill, minmax(0px, 300px));
+
+  justify-content: center;
+
   padding: 10px;
 
   width: 90%;
-  height: 100%;
+  min-height: 300px;
+
   background-color: rgb(0, 0, 0);
+
+  overflow: auto;
 
   border-width: 2px 2px 2px 2px;
   border-image: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(70, 69, 69) 100%);
   border-image-slice: 9;
   border-style: solid;
+  gap: 10px;
 }
 
 .search-form {
@@ -312,7 +324,7 @@
   overflow: hidden;
   position: relative;
 
-  width: 320px;
+  width: max-content/3;
 
   gap: 10px;
 
@@ -326,11 +338,12 @@
 }
 
 .card-image img {
+  padding: 10px;
   width: 100px;
   height: 100px;
   object-fit: cover;
-  filter: brightness(0.85);
-  transition: filter 0.3s ease;
+  filter: brightness(0.75);
+  transition: filter 0.5s ease;
 }
 
 .card:hover .card-image img {
@@ -383,10 +396,9 @@
   font-weight: 600;
   font-style: normal;
   font-size: 13px;
-  
 }
 
-.card-content  p{
+.card-content p {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -416,12 +428,17 @@
 }
 
 .card-more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 50%;
   height: 80%;
 
   background-color: rgba(0, 255, 106, 0.63);
-  box-shadow: 0px 0px 2px rgba(43, 255, 0, 0.37);
   overflow: hidden;
+  
+  border-radius: 10px;
 
   border: transparent solid 1px;
 
@@ -430,6 +447,7 @@
   font-family: "Chakra Petch", sans-serif;
   font-weight: 700;
   font-style: normal;
+  text-align: center;
 }
 
 .card-more-btn:hover {
