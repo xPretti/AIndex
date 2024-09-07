@@ -1,6 +1,7 @@
 function getCardSyntax(element) {
   return `
           <div class="card">
+              <h3 class="card-price">${element.price}</h3>
               <div class="card-image">
                   <img src=${element.img} alt="Nome da Tecnologia">
               </div>

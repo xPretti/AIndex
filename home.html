@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIndex</title>
-
+    
+    <link rel="icon" href="../../resources/images/Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="src/css/fonts.css" />
     <link rel="stylesheet" href="src/css/highlights.css" />
     <link rel="stylesheet" href="src/css/styles.css" />
@@ -58,30 +59,55 @@
         <div class="categories align-insile-center style-no-select">
             <div class="category-types">
                 <div class="align-insile-center">
-                    <button class="category-button" id="btn-all" onclick='onClickCategory(this, ENUM_CATEGORY_TYPE.ALL)'>Todos</button>
+                    <button class="category-button" id="btn-all"
+                        onclick='onClickCategory(this, ENUM_CATEGORY_TYPE.ALL)'>Todos</button>
                     <div class="vertical-line"></div>
-                    <button class="category-button" id="btn-assistants" onclick='onClickCategory(this, ENUM_CATEGORY_TYPE.ASSISTANT)'>Assistentes</button>
+                    <button class="category-button" id="btn-assistants"
+                        onclick='onClickCategory(this, ENUM_CATEGORY_TYPE.ASSISTANT)'>Assistentes</button>
                     <div class="vertical-line"></div>
-                    <button class="category-button" id="btn-copilots" onclick='onClickCategory(this, ENUM_CATEGORY_TYPE.COPILOT)'>Copilotos</button>
+                    <button class="category-button" id="btn-copilots"
+                        onclick='onClickCategory(this, ENUM_CATEGORY_TYPE.COPILOT)'>Copilotos</button>
                     <div class="vertical-line"></div>
-                    <button class="category-button" id="btn-artists" onclick='onClickCategory(this, ENUM_CATEGORY_TYPE.ARTIST) '>Artistas</button>
+                    <button class="category-button" id="btn-artists"
+                        onclick='onClickCategory(this, ENUM_CATEGORY_TYPE.ARTIST) '>Artistas</button>
                     <div class="vertical-line"></div>
-                    <button class="category-button" id="btn-synthesizers" onclick='onClickCategory(this, ENUM_CATEGORY_TYPE.SYNTHESIZER) '>Sintetizadores</button>
-                    <form class="search-form">
+                    <button class="category-button" id="btn-synthesizers"
+                        onclick='onClickCategory(this, ENUM_CATEGORY_TYPE.SYNTHESIZER) '>Sintetizadores</button>
+                    <!-- <form class="search-form">
                         <div class="search-group">
                             <input class="search-input" type="search" placeholder="Pesquisar">
                             <button class="input-search-btn" type="submit">
                                 <img class="input-search-btn" src="../../resources/images/Lupa.png" alt="Search">
                             </button>
                         </div>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </div>
         <div class="results-area" id="results-area">
             <div class="results-container" id="results">
+
+                <div class="card">
+                    <h3 class="card-price">PAGO</h3>
+                    <div class="card-image">
+                        <img src="../../resources/images/Logo.png" alt="Nome da Tecnologia">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title">
+                            <h3>GGGGGG</h3>
+                            <h4>DDDDDD</h4>
+                        </div>
+                        <p>DDDDDDDDD DDAWDG WGD YAWGDGWAGYD GAWG DYAW GAYWGD GAWY DGAYWG DYAWGY DYAWG DYGAWY
+                            DGYWGYGAYWG </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="${element.link}" target="_blank" class="card-more-btn">Conhecer</a>
+                    </div>
+                </div>
             </div>
         </div>
+
+
     </main>
 
     <!-- 
